@@ -46,18 +46,21 @@ class HomePage extends StatelessWidget {
         leading  : getIcon( opt['icon']  ),
         trailing : Icon( Icons.keyboard_arrow_right,  color: Colors.blue),
         onTap    :() {
+          Navigator.pushNamed(context, opt['ruta'] );
+          /*
           final route = MaterialPageRoute(
             builder  : (context)  => AlertPage()
           );
 
           Navigator.push(context, route);
+          */
         },
       );
 
       opciones..add( widgetTemp )
               ..add( Divider());
     });
-    
+
     return opciones;
     /*
     return [
