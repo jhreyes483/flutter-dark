@@ -7,6 +7,7 @@ class HomeTemp extends StatelessWidget {
   //const HomeTemp({super.key});
   final opciones = ['Uno','Dos','Tres','Cuatro','Cinco'];
 
+
   @override
   Widget build(BuildContext context) {
 
