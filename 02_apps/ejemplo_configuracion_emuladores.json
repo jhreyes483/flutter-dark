@@ -1,0 +1,13 @@
+{
+    "launch": {
+        "configurations": [
+            {
+                "name": "Javier configuracion",
+                "request": "launch",
+                "type": "dart",
+                "flutterMode": "debug"
+            }
+        ]
+    },
+    "git.openRepositoryInParentFolders": "never"
+}
