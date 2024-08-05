@@ -1,7 +1,8 @@
 
 
 
-import 'package:a_count/src/pages/home-page.dart';
+import 'package:a_count/src/pages/contador_page.dart';
+//import 'package:a_count/src/pages/home-page.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget{
@@ -11,8 +12,10 @@ class MyApp extends StatelessWidget{
 
     
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Center(
-        child: HomePage(),
+        //child: HomePage(),
+        child: ContadorPage(),
       )
       
       ,
