@@ -27,9 +27,20 @@
             "texto": "inputs"
         },
         {
+            "ruta": "slider",
+            "icon": "slider",
+            "texto": "Slider"
+        },
+        {
             "ruta": "list",
             "icon": "list",
             "texto": "Listas"
+        },
+        {
+            "ruta": "imagen",
+            "icon": "list",
+            "texto": "Imagen"
         }
+    
     ]
 }

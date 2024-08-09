@@ -11,7 +11,24 @@ class CardPage extends StatelessWidget {
           children: <Widget>[
             _cardTipo1(),
             SizedBox(height: 30.0),
-            _cardTipo2()
+            _cardTipo2(),
+            SizedBox(height: 30.0),
+            _cardTipo1(),
+            SizedBox(height: 30.0),
+            _cardTipo2(),
+            SizedBox(height: 30.0),
+            _cardTipo1(),
+            SizedBox(height: 30.0),
+            _cardTipo2(),
+            SizedBox(height: 30.0),
+            _cardTipo1(),
+            SizedBox(height: 30.0),
+            _cardTipo2(),
+            SizedBox(height: 30.0),
+            _cardTipo1(),
+            SizedBox(height: 30.0),
+            _cardTipo2(),
+            SizedBox(height: 30.0),
           ],
         ), 
         floatingActionButton: FloatingActionButton( // boton para regresar
@@ -29,31 +46,38 @@ class CardPage extends StatelessWidget {
     final card = Container(
       child: Column(
         children: [
-          Padding(
-            padding: const EdgeInsets.all(
-                10.0), // Ajusta el espaciado alrededor del texto
-            child: Text('Texto de abajo'),
+            FadeInImage(
+            image          : NetworkImage('https://static.photocdn.pt/images/articles/2017_1/iStock-545347988.jpg'),
+            placeholder    : AssetImage('assets/jar-loading.gif'),
+            fadeInDuration : Duration( milliseconds: 200 ),
+            height         : 300.0,
+            fit            : BoxFit.cover,
           ),
+
+          Container(
+            padding: EdgeInsets.all(10.0),
+            child: Text('No tengo idea de que poner')
+          )
         ],
       ),
     );
 
     return Container(
-      decoration    : BoxDecoration(
-        borderRadius: BorderRadius.circular(30.0),
-        color: Colors.white,
+      decoration      : BoxDecoration(
+        borderRadius  : BorderRadius.circular(30.0),
+        color         : Colors.white,
         boxShadow: <BoxShadow>[
           BoxShadow(
-            color: Colors.black26,
-            blurRadius: 10.0,
-            spreadRadius: 2.0,
-            offset: Offset(2.0, 10.0)
+            color        : Colors.black26,
+            blurRadius   : 10.0,
+            spreadRadius : 2.0,
+            offset       : Offset(2.0, 10.0)
           )
         ]
       ),
       child: ClipRRect( // quita todo lo que este porfuera del contenedor
-        borderRadius: BorderRadius.circular(30.0),
-        child: card,
+        borderRadius : BorderRadius.circular(30.0),
+        child        : card,
       ),
     ); 
   }
@@ -68,20 +92,20 @@ class CardPage extends StatelessWidget {
       child: Column(
         children: [
           ListTile(
-            leading: Icon(Icons.photo_album, color: Colors.blue),
-            title: Text('Soy el titulo de la targenta'),
-            subtitle: Text('Esta es la descripcion de la tarjeta'),
+            leading  : Icon(Icons.photo_album, color: Colors.blue),
+            title    : Text('Soy el titulo de la targenta'),
+            subtitle : Text('Esta es la descripcion de la tarjeta'),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               TextButton(
-                child: Text('Cancelar'),
-                onPressed: () {},
+                child     : Text('Cancelar'),
+                onPressed : () {},
               ),
               TextButton(
-                child: Text('Ok'),
-                onPressed: () {},
+                child      : Text('Ok'),
+                onPressed  : () {},
               ),
             ],
           )

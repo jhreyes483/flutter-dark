@@ -22,12 +22,16 @@ class MyApp extends StatelessWidget {
         // home: HomePage(),
         localizationsDelegates: [
           GlobalMaterialLocalizations.delegate,
-          GlobalWidgetsLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,                  
+          GlobalCupertinoLocalizations.delegate,
         ],  
         supportedLocales: [
           const Locale('en', 'US'), // English
           const Locale('es', 'ES'),
         ],
+
+
+        
         initialRoute:  '/',
         routes: getApplicationRoutes(),
         onGenerateRoute: (RouteSettings settings) {

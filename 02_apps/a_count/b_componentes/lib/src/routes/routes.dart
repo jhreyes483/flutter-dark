@@ -1,7 +1,9 @@
 import 'package:b_componentes/src/pages/animated_container.dart';
 import 'package:b_componentes/src/pages/card_page.dart';
 import 'package:b_componentes/src/pages/input_page.dart';
+import 'package:b_componentes/src/pages/listview_page.dart';
 import 'package:b_componentes/src/pages/slider_page.dart';
+import 'package:b_componentes/src/pages/test_imagen.dart';
 import 'package:flutter/material.dart';
 
 import 'package:b_componentes/src/pages/alert_page.dart';
@@ -16,6 +18,8 @@ Map<String, WidgetBuilder> getApplicationRoutes() {
     'card'                 : (BuildContext context) => CardPage(),
     'animatedContainer'    : (BuildContext context) => AnimatedContainerPage(),
     'inputs'               : (BuildContext context) => InputPage(),
-    'list'                 : (BuildContext context) => SliderPage(),
+    'slider'               : (BuildContext context) => SliderPage(),
+    'list'                 : (BuildContext context) => ListaPage(),
+    'imagen'               : (BuildContext context) => TestImagen(),
   };
 }
