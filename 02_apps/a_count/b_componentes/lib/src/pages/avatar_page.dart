@@ -9,12 +9,14 @@ class AvatarPage extends StatelessWidget {
     return Scaffold(
       appBar   : AppBar(
         title  : Text('Avatar - Page'),
+        backgroundColor: Colors.blue,
+        
+
         actions: <Widget>[
           Container(
             padding : EdgeInsets.all(5.0),
-            child   : CircleAvatar(
-              backgroundImage: NetworkImage(
-                  'https://drive.google.com/drive/u/6/folders/1ffntX2bMNPgwL3mtuB2zSgyMZFMTPFJz'),
+            child: CircleAvatar(
+                backgroundImage: NetworkImage('https://pbs.twimg.com/profile_images/1018943227791982592/URnaMrya.jpg'),
               radius: 25.0,
             ),
           ),

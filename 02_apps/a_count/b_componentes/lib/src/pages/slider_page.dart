@@ -26,9 +26,9 @@ class _SliderPageState extends State<SliderPage> {
           child: Column(
             children: [
               _crearSlider(),
-              _crearImagen(),
               _crearCheckBox(),
-              _crearSwitch()
+              _crearSwitch(),
+              _crearImagen(),
             ],
           ),
         ));

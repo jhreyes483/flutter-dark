@@ -56,7 +56,7 @@ class CardPage extends StatelessWidget {
 
           Container(
             padding: EdgeInsets.all(10.0),
-            child: Text('No tengo idea de que poner')
+            child: Text('borde de abajo')
           )
         ],
       ),
