@@ -5,6 +5,8 @@ import 'package:flutter/widgets.dart';
 class SliderPage extends StatefulWidget {
   const SliderPage({super.key});
 
+
+
   @override
   State<SliderPage> createState() => _SliderPageState();
 }

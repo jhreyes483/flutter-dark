@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 
 class ListaPage extends StatefulWidget {
@@ -29,7 +31,7 @@ class _ListaPageState extends State<ListaPage> {
 
   @override
   void dispose() {
-    _scrollController.dispose();
+    _scrollController.dispose(); // basea el scroll cuando se termina
     super.dispose();
   }
 
@@ -49,8 +51,8 @@ class _ListaPageState extends State<ListaPage> {
   }
 
   Widget _crearLista() {
-    return RefreshIndicator(
-      onRefresh: obtenerPagina1,
+    return RefreshIndicator( // accion cuando se jala desde arriba pull en celular
+      onRefresh: obtenerPagina1, // pasa la referencia "aun no se ejecuta"
       child: ListView.builder(
         controller  : _scrollController,
         itemCount   : _listaNumeros.length,
@@ -107,16 +109,21 @@ class _ListaPageState extends State<ListaPage> {
       _isLoading = true;
     });
 
+
     await Future.delayed(Duration(seconds: 2));
+    respuestaHTTP();
+  }
+
+  void respuestaHTTP(){
 
     setState(() {
       _isLoading = false;
     });
 
-    _scrollController.animateTo(
+    _scrollController.animateTo( // mueve el scroll hacia abajo
       _scrollController.position.pixels + 100,
-      curve: Curves.fastOutSlowIn,
-      duration: Duration(milliseconds: 250),
+      curve    : Curves.fastOutSlowIn,
+      duration : Duration(milliseconds: 250),
     );
 
     _agregar10();

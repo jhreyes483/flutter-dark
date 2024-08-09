@@ -29,9 +29,6 @@ class MyApp extends StatelessWidget {
           const Locale('en', 'US'), // English
           const Locale('es', 'ES'),
         ],
-
-
-        
         initialRoute:  '/',
         routes: getApplicationRoutes(),
         onGenerateRoute: (RouteSettings settings) {

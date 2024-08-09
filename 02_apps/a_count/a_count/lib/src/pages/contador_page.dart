@@ -17,14 +17,14 @@ class _ContadorPageState extends State<ContadorPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Statefull'),
+          title: Text('Statefull 2'),
           centerTitle: true,
         ),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text('Numero de clicks:', style: _estiloTexto),
+              Text('Numero de click: ', style: _estiloTexto),
               Text('$_conteo', style: _estiloTexto),
             ],
           ),

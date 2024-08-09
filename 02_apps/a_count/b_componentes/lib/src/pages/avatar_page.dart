@@ -8,7 +8,7 @@ class AvatarPage extends StatelessWidget {
 
     return Scaffold(
       appBar   : AppBar(
-        title  : Text('Avatar Page'),
+        title  : Text('Avatar - Page'),
         actions: <Widget>[
           Container(
             padding : EdgeInsets.all(5.0),
